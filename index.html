@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="my.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+    </style>
+  </head>
+
+  <body>
+    <div class="background">
+      <div class="res">
+        <p id="upper"></p>
+        <input type="text" id="lower" />
+      </div>
+
+      <div class="btns" id="btns">
+        <div class="row">
+          <input
+            type="button"
+            class="btn1"
+            id="btn1"
+            style="font-size: 23px; color: orange; background-color: #565d60"
+            value="AC"
+            onclick="Clear()"
+          />
+          <input
+            type="button"
+            class="btn1"
+            id="btn2"
+            style="font-size: 23px; color: orange; background-color: #565d60"
+            value="Del"
+            onclick="Back()"
+          />
+          <input
+            type="button"
+            class="btn1"
+            id="btn3"
+            style="font-size: 23px; color: orange; background-color: #565d60"
+            value="Rem"
+            onclick="operator('%')"
+          />
+          <input
+            type="button"
+            class="btn1"
+            id="btn4"
+            value="/"
+            style="color: orange; background-color: #565d60"
+            onclick="operator('/')"
+          />
+        </div>
+        <div class="row">
+          <input
+            type="button"
+            class="btn1"
+            id="btn5"
+            value="7"
+            onclick="Solve('7')"
+          />
+          <input
+            type="button"
+            class="btn1"
+            id="btn6"
+            value="8"
+            onclick="Solve('8')"
+          />
+          <input
+            type="button"
+            class="btn1"
+            id="btn7"
+            value="9"
+            onclick="Solve('9')"
+          />
+          <input
+            type="button"
+            class="btn1"
+            id="btn8"
+            value="x"
+            style="color: orange; background-color: #565d60"
+            onclick="operator('*')"
+          />
+        </div>
+        <div class="row">
+          <input
+            type="button"
+            class="btn1"
+            id="btn9"
+            value="4"
+            onclick="Solve('4')"
+          />
+          <input
+            type="button"
+            class="btn1"
+            id="btn10"
+            value="5"
+            onclick="Solve('5')"
+          />
+          <input
+            type="button"
+            class="btn1"
+            id="btn11"
+            value="6"
+            onclick="Solve('6')"
+          />
+          <input
+            type="button"
+            class="btn1"
+            id="btn12"
+            value="-"
+            style="color: orange; background-color: #565d60"
+            onclick="operator('-')"
+          />
+        </div>
+        <div class="row">
+          <input
+            type="button"
+            class="btn1"
+            id="btn13"
+            value="1"
+            onclick="Solve('1')"
+          />
+          <input
+            type="button"
+            class="btn1"
+            id="btn14"
+            value="2"
+            onclick="Solve('2')"
+          />
+          <input
+            type="button"
+            class="btn1"
+            id="btn15"
+            value="3"
+            onclick="Solve('3')"
+          />
+          <input
+            type="button"
+            class="btn1"
+            id="btn16"
+            value="+"
+            style="color: orange; background-color: #565d60"
+            onclick="operator('+')"
+          />
+        </div>
+        <div class="row">
+          <input
+            type="button"
+            class="btn1"
+            id="btn17"
+            value="."
+            onclick="point()"
+          />
+          <input
+            type="button"
+            class="btn1"
+            id="btn18"
+            value="0"
+            onclick="Solve('0')"
+          />
+          <input
+            type="button"
+            class="btn2"
+            id="btn19"
+            value="="
+            onclick="Result()"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="my.js"></script>
+  </body>
+</html>
